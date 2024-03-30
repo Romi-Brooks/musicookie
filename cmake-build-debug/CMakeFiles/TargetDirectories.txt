@@ -1,0 +1,3 @@
+/home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles/musicookie.dir
+/home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles/rebuild_cache.dir
