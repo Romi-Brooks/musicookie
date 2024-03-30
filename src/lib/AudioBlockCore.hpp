@@ -4,5 +4,86 @@
 
 #ifndef MUSICOOKIE_AUDIOBLOCKCORE_HPP
 #define MUSICOOKIE_AUDIOBLOCKCORE_HPP
+#include <vector>
+#include <string>
+
+enum AudioBlockType {
+    AudioBlockType_Midi,
+    AudioBlockType_Audio,
+};
+
+class AudioBlockCore {
+public:
+    //Audio Block Basic Functions
+    //Constructor
+    AudioBlockCore(AudioBlockType type);
+    AudioBlockType type;
+//    //Destructor:
+    virtual ~AudioBlockCore();
+
+    //Get Name
+    std::string GetName();
+    //Give Name
+    void SetName(std::string UserBlockName);
+    //Get Vol
+    int GetVol();
+    //Set Vol
+    void SetVol(int UserVol);
+    //Get Pan
+    int GetPan();
+    //Set Pan
+    void SetPan(int UserPan);
+
+    //get the type of the block
+    AudioBlockType getType();
+
+private:
+    //Audio Block Basic Settings
+    //Name
+    std::string AudioBlockName;
+    //Vol
+    int AudioBlockVol = 80;
+    //Pan
+    int AudioBlockPan = 0;
+    //Type
+    AudioBlockType _type;
+    //...
+
+    //Collector
+    std::vector<AudioBlockCore> _blocks;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//This class is a subclass of AudioBlockCore, and is used to store MIDI data for synthesis
+class AudioBlockMidi : public AudioBlockCore {
+    AudioBlockMidi(std::vector<std::string> midiData);
+    std::vector<std::string> midiData;
+
+private:
+    std::vector<std::string> _midiData;
+
+};
+
+//This class is a subclass of AudioBlockCore, and is used to store audio data for sample playback
+class AudioBlockAudio : public AudioBlockCore {
+public:
+    AudioBlockAudio(std::vector<float> audioData);
+    std::vector<float> audioData;
+private:
+    std::vector<float> _audioData;
+
+};
 
 #endif //MUSICOOKIE_AUDIOBLOCKCORE_HPP
