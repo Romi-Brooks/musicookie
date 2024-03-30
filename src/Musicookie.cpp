@@ -3,7 +3,7 @@
 void CreateAudioBlock() {
 //    get user input name
     std::string name;
-    std::cout << "Enter the name of the block: ";
+    std::cout << "Enter the name of the audio block: ";
     std::cin >> name;
 
     AudioBlockCore block(AudioBlockType_Audio);
@@ -16,7 +16,7 @@ void CreateAudioBlock() {
 void CreateMIDIBlock() {
     //    get user input name
     std::string name;
-    std::cout << "Enter the name of the block: ";
+    std::cout << "Enter the name of the midi block: ";
     std::cin >> name;
 
     AudioBlockCore block(AudioBlockType_Midi);
@@ -29,6 +29,7 @@ void CreateMIDIBlock() {
 
 int main() {
     CreateAudioBlock();
+    CreateMIDIBlock();
     return 0;
 }
 

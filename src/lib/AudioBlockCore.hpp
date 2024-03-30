@@ -16,7 +16,7 @@ class AudioBlockCore {
 public:
     //Audio Block Basic Functions
     //Constructor
-    AudioBlockCore(AudioBlockType type);
+    explicit AudioBlockCore(AudioBlockType type);
     AudioBlockType type;
 //    //Destructor:
     virtual ~AudioBlockCore();
@@ -68,7 +68,7 @@ private:
 
 //This class is a subclass of AudioBlockCore, and is used to store MIDI data for synthesis
 class AudioBlockMidi : public AudioBlockCore {
-    AudioBlockMidi(std::vector<std::string> midiData);
+    explicit AudioBlockMidi(std::vector<std::string> midiData);
     std::vector<std::string> midiData;
 
 private:
@@ -79,7 +79,7 @@ private:
 //This class is a subclass of AudioBlockCore, and is used to store audio data for sample playback
 class AudioBlockAudio : public AudioBlockCore {
 public:
-    AudioBlockAudio(std::vector<float> audioData);
+    explicit AudioBlockAudio(std::vector<float> audioData);
     std::vector<float> audioData;
 private:
     std::vector<float> _audioData;
