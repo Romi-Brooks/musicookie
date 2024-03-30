@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/musicookie.dir/src/Musicookie.cpp.o -o musicookie 
+/usr/bin/c++ -g CMakeFiles/musicookie.dir/src/Musicookie.cpp.o CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o -o musicookie 

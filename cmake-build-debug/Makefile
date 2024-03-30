@@ -129,6 +129,30 @@ musicookie/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/build
 .PHONY : musicookie/fast
 
+src/AudioBlockCore.o: src/AudioBlockCore.cpp.o
+.PHONY : src/AudioBlockCore.o
+
+# target to build an object file
+src/AudioBlockCore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o
+.PHONY : src/AudioBlockCore.cpp.o
+
+src/AudioBlockCore.i: src/AudioBlockCore.cpp.i
+.PHONY : src/AudioBlockCore.i
+
+# target to preprocess a source file
+src/AudioBlockCore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.i
+.PHONY : src/AudioBlockCore.cpp.i
+
+src/AudioBlockCore.s: src/AudioBlockCore.cpp.s
+.PHONY : src/AudioBlockCore.s
+
+# target to generate assembly for a file
+src/AudioBlockCore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.s
+.PHONY : src/AudioBlockCore.cpp.s
+
 src/Musicookie.o: src/Musicookie.cpp.o
 .PHONY : src/Musicookie.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... musicookie"
+	@echo "... src/AudioBlockCore.o"
+	@echo "... src/AudioBlockCore.i"
+	@echo "... src/AudioBlockCore.s"
 	@echo "... src/Musicookie.o"
 	@echo "... src/Musicookie.i"
 	@echo "... src/Musicookie.s"

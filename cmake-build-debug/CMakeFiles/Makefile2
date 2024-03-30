@@ -81,12 +81,12 @@ clean: CMakeFiles/musicookie.dir/clean
 CMakeFiles/musicookie.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target musicookie"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target musicookie"
 .PHONY : CMakeFiles/musicookie.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/musicookie.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/musicookie.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/romi/Project/CPP/musicookie/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/musicookie.dir/rule

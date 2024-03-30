@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o"
+  "CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o.d"
   "CMakeFiles/musicookie.dir/src/Musicookie.cpp.o"
   "CMakeFiles/musicookie.dir/src/Musicookie.cpp.o.d"
   "musicookie"

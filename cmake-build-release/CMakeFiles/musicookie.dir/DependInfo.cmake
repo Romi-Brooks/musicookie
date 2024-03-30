@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/romi/Project/CPP/musicookie/src/AudioBlockCore.cpp" "CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o" "gcc" "CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o.d"
   "/home/romi/Project/CPP/musicookie/src/Musicookie.cpp" "CMakeFiles/musicookie.dir/src/Musicookie.cpp.o" "gcc" "CMakeFiles/musicookie.dir/src/Musicookie.cpp.o.d"
   )
 
