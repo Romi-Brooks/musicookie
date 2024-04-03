@@ -82,13 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/romi/Project/CPP/musicookie/src/AudioBlockCore.cpp">
+		<Unit filename="/home/romi/Project/CPP/musicookie/src/CoreObjectives/AudioBlockCore.cpp">
 			<Option target="musicookie"/>
 		</Unit>
 		<Unit filename="/home/romi/Project/CPP/musicookie/src/Musicookie.cpp">
 			<Option target="musicookie"/>
 		</Unit>
-		<Unit filename="/home/romi/Project/CPP/musicookie/src/lib/AudioBlockCore.hpp">
+		<Unit filename="/home/romi/Project/CPP/musicookie/src/lib/CoreObjective/AudioBlockCore.hpp">
 			<Option target="musicookie"/>
 		</Unit>
 		<Unit filename="/home/romi/Project/CPP/musicookie/CMakeLists.txt">

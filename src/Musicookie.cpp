@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lib/AudioBlockCore.hpp"
+#include "lib/CoreObjective/AudioBlockCore.hpp"
 void CreateAudioBlock() {
 //    get user input name
     std::string name;
@@ -11,7 +11,7 @@ void CreateAudioBlock() {
     std::cout << "Block Name: " << block.GetName() << std::endl;
     std::cout << "Block Pan: " << block.GetPan() << std::endl;
     std::cout << "Block Vol: " << block.GetVol() << std::endl;
-    std::cout << "Block Type: " << block.getType() << std::endl;
+    std::cout << "Block Type: " << block.GetTypeName() << std::endl;
 }
 void CreateMIDIBlock() {
     //    get user input name
@@ -24,7 +24,7 @@ void CreateMIDIBlock() {
     std::cout << "Block Name: " << block.GetName() << std::endl;
     std::cout << "Block Pan: " << block.GetPan() << std::endl;
     std::cout << "Block Vol: " << block.GetVol() << std::endl;
-    std::cout << "Block Type: " << block.getType() << std::endl;
+    std::cout << "Block Type: " << block.GetTypeName() << std::endl;
 }
 
 int main() {

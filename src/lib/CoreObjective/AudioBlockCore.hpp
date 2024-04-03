@@ -17,8 +17,7 @@ public:
     //Audio Block Basic Functions
     //Constructor
     explicit AudioBlockCore(AudioBlockType type);
-    AudioBlockType type;
-//    //Destructor:
+    //Destructor:
     virtual ~AudioBlockCore();
 
     //Get Name
@@ -33,9 +32,9 @@ public:
     int GetPan();
     //Set Pan
     void SetPan(int UserPan);
-
-    //get the type of the block
-    AudioBlockType getType();
+    //Get Type
+    AudioBlockType GetType();
+    std::string GetTypeName(); // Trans the Type enum index num to string, what a fucking tip.
 
 private:
     //Audio Block Basic Settings
@@ -46,9 +45,7 @@ private:
     //Pan
     int AudioBlockPan = 0;
     //Type
-    AudioBlockType _type;
-    //...
-
+    std::basic_string<char> BlockType;
     //Collector
     std::vector<AudioBlockCore> _blocks;
 };

@@ -129,29 +129,29 @@ musicookie/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/build
 .PHONY : musicookie/fast
 
-src/AudioBlockCore.o: src/AudioBlockCore.cpp.o
-.PHONY : src/AudioBlockCore.o
+src/CoreObjectives/AudioBlockCore.o: src/CoreObjectives/AudioBlockCore.cpp.o
+.PHONY : src/CoreObjectives/AudioBlockCore.o
 
 # target to build an object file
-src/AudioBlockCore.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.o
-.PHONY : src/AudioBlockCore.cpp.o
+src/CoreObjectives/AudioBlockCore.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.o
+.PHONY : src/CoreObjectives/AudioBlockCore.cpp.o
 
-src/AudioBlockCore.i: src/AudioBlockCore.cpp.i
-.PHONY : src/AudioBlockCore.i
+src/CoreObjectives/AudioBlockCore.i: src/CoreObjectives/AudioBlockCore.cpp.i
+.PHONY : src/CoreObjectives/AudioBlockCore.i
 
 # target to preprocess a source file
-src/AudioBlockCore.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.i
-.PHONY : src/AudioBlockCore.cpp.i
+src/CoreObjectives/AudioBlockCore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.i
+.PHONY : src/CoreObjectives/AudioBlockCore.cpp.i
 
-src/AudioBlockCore.s: src/AudioBlockCore.cpp.s
-.PHONY : src/AudioBlockCore.s
+src/CoreObjectives/AudioBlockCore.s: src/CoreObjectives/AudioBlockCore.cpp.s
+.PHONY : src/CoreObjectives/AudioBlockCore.s
 
 # target to generate assembly for a file
-src/AudioBlockCore.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/AudioBlockCore.cpp.s
-.PHONY : src/AudioBlockCore.cpp.s
+src/CoreObjectives/AudioBlockCore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/musicookie.dir/build.make CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.s
+.PHONY : src/CoreObjectives/AudioBlockCore.cpp.s
 
 src/Musicookie.o: src/Musicookie.cpp.o
 .PHONY : src/Musicookie.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... musicookie"
-	@echo "... src/AudioBlockCore.o"
-	@echo "... src/AudioBlockCore.i"
-	@echo "... src/AudioBlockCore.s"
+	@echo "... src/CoreObjectives/AudioBlockCore.o"
+	@echo "... src/CoreObjectives/AudioBlockCore.i"
+	@echo "... src/CoreObjectives/AudioBlockCore.s"
 	@echo "... src/Musicookie.o"
 	@echo "... src/Musicookie.i"
 	@echo "... src/Musicookie.s"

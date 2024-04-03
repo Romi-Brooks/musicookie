@@ -1,0 +1,12 @@
+# ninja log v5
+0	660	1712151888057702676	CMakeFiles/musicookie.dir/src/Musicookie.cpp.o	e2633d050a67d62d
+0	600	1712152031067192333	CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.o	e1e9b66d944125a3
+600	662	1712152031127194655	musicookie	4c374219d5427533
+0	602	1712152480738229699	CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.o	e1e9b66d944125a3
+602	663	1712152480798231388	musicookie	4c374219d5427533
+1	621	1712152614978610357	CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.o	e1e9b66d944125a3
+621	687	1712152615041945418	musicookie	4c374219d5427533
+0	588	1712152658666463266	CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.o	e1e9b66d944125a3
+589	653	1712152658729798313	musicookie	4c374219d5427533
+0	598	1712152753359008023	CMakeFiles/musicookie.dir/src/CoreObjectives/AudioBlockCore.cpp.o	e1e9b66d944125a3
+598	661	1712152753422343048	musicookie	4c374219d5427533
