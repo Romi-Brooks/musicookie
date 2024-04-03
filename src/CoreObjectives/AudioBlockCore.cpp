@@ -3,7 +3,7 @@
 //
 #include <iostream>
 #include <utility>
-#include "../lib/CoreObjective/AudioBlockCore.hpp"
+#include "../lib/CoreObjectives/AudioBlockCore.hpp"
 
 //Class Functions
 AudioBlockCore::AudioBlockCore(AudioBlockType type) {

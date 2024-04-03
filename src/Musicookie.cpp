@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lib/CoreObjective/AudioBlockCore.hpp"
+#include "lib/CoreObjectives/AudioBlockCore.hpp"
 void CreateAudioBlock() {
 //    get user input name
     std::string name;
