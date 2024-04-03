@@ -3,4 +3,4 @@ project(musicookie)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(musicookie src/Musicookie.cpp src/lib/CoreObjective/AudioBlockCore.hpp src/CoreObjectives/AudioBlockCore.cpp)
+add_executable(musicookie src/Musicookie.cpp src/lib/CoreObjectives/AudioBlockCore.hpp src/CoreObjectives/AudioBlockCore.cpp)

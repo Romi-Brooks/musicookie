@@ -88,7 +88,7 @@
 		<Unit filename="/home/romi/Project/CPP/musicookie/src/Musicookie.cpp">
 			<Option target="musicookie"/>
 		</Unit>
-		<Unit filename="/home/romi/Project/CPP/musicookie/src/lib/CoreObjective/AudioBlockCore.hpp">
+		<Unit filename="/home/romi/Project/CPP/musicookie/src/lib/CoreObjectives/AudioBlockCore.hpp">
 			<Option target="musicookie"/>
 		</Unit>
 		<Unit filename="/home/romi/Project/CPP/musicookie/CMakeLists.txt">
