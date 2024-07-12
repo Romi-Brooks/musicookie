@@ -53,6 +53,13 @@ private:
 };
 
 // 日志宏定义
-#define LOG(level) LogSystem(level)
+#define LogSystem(level) LogSystem(level)
 
+// Use Way:
+/*
+    LogSystem(Log_INFO) << Log_INFO << "This is an info message.";
+    LogSystem(Log_WARNING) << Log_WARNING << "This is a warning message.";
+    LogSystem(Log_ERROR) << Log_ERROR << "This is an error message.";
+    LogSystem(Log_DEBUG) << Log_DEBUG << "This is a debug message.";
+*/
 #endif //LOGSYSTEM_HPP

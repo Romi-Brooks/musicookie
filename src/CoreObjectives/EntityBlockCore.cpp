@@ -4,7 +4,7 @@
 
 #include <utility>
 
-#include "../../lib/CoreObjectives/AudioBlockCore.hpp"
+#include "../../lib/CoreObjectives/EntityBlockCore.hpp"
 
 //Class Functions
 EntityBlockCore::EntityBlockCore(EntityBlockType type) {

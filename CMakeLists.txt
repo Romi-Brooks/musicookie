@@ -3,7 +3,7 @@ project(musicookie)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(musicookie src/Musicookie.cpp lib/CoreObjectives/AudioBlockCore.hpp src/CoreObjectives/AudioBlockCore.cpp
+add_executable(musicookie src/Musicookie.cpp lib/CoreObjectives/EntityBlockCore.hpp src/CoreObjectives/EntityBlockCore.cpp
         src/ObjectivesFunctions/BasicFunctions.cpp
         lib/ObjectivesFunctions/BasicFunctions.hpp
         src/IOSystem/LogSystem.cpp

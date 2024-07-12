@@ -91,6 +91,7 @@ WORD LogSystem::getConsoleColor(LogLevel level) {
     }
 }
 // 启用Windows终端的ANSI转义码支持
+// Fuck U Windows
 void LogSystem::enableVirtualTerminalProcessing() {
     HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
     if (hOut == INVALID_HANDLE_VALUE) return;
