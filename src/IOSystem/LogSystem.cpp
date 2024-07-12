@@ -1,6 +1,8 @@
 //
 // Created by Romi on 24-7-13.
 //
+#include <iostream>
+#include <ctime>
 #include "../../lib/IOSystem/LogSystem.hpp"
 
 // 获取当前时间的字符串表示

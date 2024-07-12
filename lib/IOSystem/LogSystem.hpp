@@ -5,8 +5,6 @@
 #ifndef LOGSYSTEM_HPP
 #define LOGSYSTEM_HPP
 
-#include <iostream>
-#include <ctime>
 #include <sstream>
 #include <string>
 

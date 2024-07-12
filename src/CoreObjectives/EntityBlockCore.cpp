@@ -3,7 +3,7 @@
 //
 
 #include <utility>
-
+#include <utility>
 #include "../../lib/CoreObjectives/EntityBlockCore.hpp"
 
 //Class Functions
@@ -46,8 +46,7 @@ EntityBlockType EntityBlockCore::GetType() const {
 }
 std::string EntityBlockCore::GetTypeName() const{
     /*Need to switch-statement rewrite*/
-
-        int TypeCode = this->GetType(); // use this-> to call the function in the same class
+    int TypeCode = this->GetType(); // use this-> to call the function in the same class
         switch (TypeCode) {
             case EntityBlockType_Midi:
                 return "Midi";

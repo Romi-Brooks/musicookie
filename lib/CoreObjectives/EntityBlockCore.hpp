@@ -4,8 +4,7 @@
 
 #ifndef MUSICOOKIE_AUDIOBLOCKCORE_HPP
 #define MUSICOOKIE_AUDIOBLOCKCORE_HPP
-#include <iostream>
-#include <utility>
+
 #include <vector>
 #include <string>
 
