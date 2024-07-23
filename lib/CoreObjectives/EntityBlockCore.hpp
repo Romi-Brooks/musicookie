@@ -15,16 +15,16 @@ enum EntityBlockType {
 
 class EntityBlockCore {
     public:
-        //Audio Block Basic Functions
+
         //Constructor
         explicit EntityBlockCore(EntityBlockType type);
         //Destructor:
         virtual ~EntityBlockCore();
 
-        //Get Name
-        std::string GetName();
         //Give Name
         void SetName(std::string UserBlockName);
+        //Get Name
+        std::string GetName();
         //Get Vol
         [[nodiscard]] int GetVol() const;
         //Set Vol

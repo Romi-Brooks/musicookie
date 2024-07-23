@@ -45,9 +45,7 @@ EntityBlockType EntityBlockCore::GetType() const {
     return static_cast<EntityBlockType>(std::stoi(BlockType));
 }
 std::string EntityBlockCore::GetTypeName() const{
-    /*Need to switch-statement rewrite*/
-    int TypeCode = this->GetType(); // use this-> to call the function in the same class
-        switch (TypeCode) {
+    switch (this->GetType()) {
             case EntityBlockType_Midi:
                 return "Midi";
             case EntityBlockType_Audio:
