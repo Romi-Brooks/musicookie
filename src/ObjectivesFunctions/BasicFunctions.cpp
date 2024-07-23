@@ -6,7 +6,7 @@
 
 // forward function
 void FindEntity_Block() {
-
+    // What should i do now..?
 }
 
 bool CheckName(const std::string& User_Input_Name) {
