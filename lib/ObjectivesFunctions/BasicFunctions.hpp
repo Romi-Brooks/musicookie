@@ -22,5 +22,6 @@ void FindEntity_Block();
 void CreateAudioBlock();
 void CreateMIDIBlock();
 
-void GetBlockInfo();
+void GetMIDIBlockInfo();
+void GetAudioBlockInfo();
 #endif //BASICFUNCTIONS_HPP

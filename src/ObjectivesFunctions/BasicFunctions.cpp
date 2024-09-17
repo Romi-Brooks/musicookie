@@ -6,7 +6,7 @@
 
 // forward function
 void FindEntity_Block() {
-    // What should i do now..?
+    // What sh
 }
 
 bool CheckName(const std::string& User_Input_Name) {
@@ -26,6 +26,14 @@ bool CheckName(const std::string& User_Input_Name) {
     return true;
 }
 
+void GetMIDIBlockInfo() {
+    std::cout <<" ";
+}
+
+void GetAudioBlockInfo() {
+    std::cout <<" ";
+}
+
 
 void CreateAudioBlock() {
     while (true) {
@@ -34,7 +42,7 @@ void CreateAudioBlock() {
         std::cout << "Enter the name of the Audio Block: ";
         std::cin >> User_Type_Name;
             // Check The block Name
-            if (CheckName(User_Type_Name)) {
+            if (CheckName(User_Type_Name) == true) {
                 // Creat an Audio Block
                 EntityBlockCore block(EntityBlockType_Audio);
                 block.SetName(User_Type_Name);
@@ -51,7 +59,7 @@ void CreateMIDIBlock() {
         std::cout << "Enter the name of the MIDI Block: ";
         std::cin >> User_Type_Name;
             // Check The block Name
-            if (CheckName(User_Type_Name)) {
+            if (CheckName(User_Type_Name) == true) {
                 // Creat an MIDI Block
                 EntityBlockCore block(EntityBlockType_Midi);
                 block.SetName(User_Type_Name);
