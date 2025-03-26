@@ -1,10 +1,8 @@
-cmake_minimum_required(VERSION 3.27)
-project(musicookie)
+cmake_minimum_required(VERSION 3.28)
+project(musicookie_new)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(musicookie src/Musicookie.cpp lib/CoreObjectives/EntityBlockCore.hpp src/CoreObjectives/EntityBlockCore.cpp
-        src/ObjectivesFunctions/BasicFunctions.cpp
-        lib/ObjectivesFunctions/BasicFunctions.hpp
-        src/IOSystem/LogSystem.cpp
-        lib/IOSystem/LogSystem.hpp)
+add_executable(musicookie_new musicookie.cpp
+        CoreObject/Mixer.cpp
+        CoreObject/Mixer.hpp)

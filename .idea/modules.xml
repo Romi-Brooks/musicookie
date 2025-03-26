@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/musicookie.iml" filepath="$PROJECT_DIR$/.idea/musicookie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/musicookie-new.iml" filepath="$PROJECT_DIR$/.idea/musicookie-new.iml" />
     </modules>
   </component>
 </project>
