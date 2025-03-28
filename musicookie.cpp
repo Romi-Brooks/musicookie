@@ -1,5 +1,13 @@
 #include <iostream>
-#include "CoreObject/Mixer.hpp"
+#include "CoreObject/Mixer/Mixer.hpp"
+#include "IOSystem/Log/Log.hpp"
+
+
+auto add(std::vector<int> veca,int b) {
+    return  veca;
+}
+
+
 
 int main() {
     Mixer Global_Mixer;
@@ -7,7 +15,6 @@ int main() {
     Global_Mixer.AddMixerChannel("Hi-Hat");
     Global_Mixer.AddMixerChannel("Snare");
     Global_Mixer.AddMixerChannel("Clap");
-
     Global_Mixer.Mixer_Printer();
     return 0;
 }
