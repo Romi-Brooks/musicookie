@@ -5,7 +5,7 @@
 #include "../../IOSystem/Log/Log.hpp"
 
 // Forward Function
-std::string MuteStatus(Channel& ChannelEntity) {
+std::string MuteStatus(const Channel& ChannelEntity) {
     if(ChannelEntity.IsMute() == true) {
         return "Muted";
     }else {
@@ -13,7 +13,7 @@ std::string MuteStatus(Channel& ChannelEntity) {
     }
 }
 
-std::string SoloStatus(Channel& ChannelEntity) {
+std::string SoloStatus(const Channel& ChannelEntity) {
     if(ChannelEntity.IsSolo() == true) {
         return "Soloed";
     }else {
@@ -34,6 +34,8 @@ Channel* GetSelectedChannel(std::vector<Channel>& ChannelVector, unsigned int I_
 
 
 Channel::Channel(std::string I_ChannelName, unsigned int I_ChannelID) : ChannelName(std::move(I_ChannelName)), ChannelID(I_ChannelID){
+        Mixer_Audio_In = new double[1024];
+        Mixer_Audio_Out = new double[1024];
         ChanneVolume = 0.6;
         ChannePan = 0;
         Mute = false;
@@ -112,8 +114,21 @@ void Mixer::Mixer_SoloAction(unsigned int I_ChannelID) {
 }
 
 void Mixer::Mixer_Printer() {
-    for(auto& Selected : MixerChannels) {
-        std::cout << "ID:" << Selected.GetChannelID() << " - Channel: " << Selected.GetChannelName() << " - Volume: " << Selected.GetChannelVolume() << " - Pan: " << Selected.GetChannelPan() << std::endl;
+    for (auto &Selected: MixerChannels) {
+        std::cout << "ID:" << Selected.GetChannelID() << " - Channel: " << Selected.GetChannelName()
+                  << " - Volume: " << Selected.GetChannelVolume() << " - Pan: " << Selected.GetChannelPan()
+                  << std::endl;
     }
     LOG_INFO("Print OK");
 }
+
+// 获取到指定通道的音频输入,以便BlockFX发送使用
+double *Mixer::GetMixerChannelAudioIn(unsigned int I_ChannelID) {
+    auto* Selected = GetSelectedChannel(MixerChannels,I_ChannelID);
+    if(Selected != nullptr) {
+        return Selected->GetAudioIn();
+    }else {
+        return nullptr;
+    }
+}
+

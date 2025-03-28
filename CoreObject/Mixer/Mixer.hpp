@@ -1,17 +1,18 @@
 #ifndef MIXER_HPP
 #define MIXER_HPP
 #include <vector>
+#include <string>
 
 class Channel {
-private:
-    std::string ChannelName;
-    unsigned int ChannelID;
-    float ChanneVolume;
-    int ChannePan;
-    bool Mute;
-    bool Solo;
-    double* Audio_IN;
-    double* Audio_Out;
+    private:
+        std::string ChannelName;
+        unsigned int ChannelID;
+        float ChanneVolume;
+        int ChannePan;
+        bool Mute;
+        bool Solo;
+        double* Mixer_Audio_In;
+        double* Mixer_Audio_Out;
 
     public:
         // Defualt Constructor
@@ -24,6 +25,7 @@ private:
         auto GetChannelID() const {return ChannelID;}
         auto IsSolo() const {return Solo;}
         auto IsMute() const {return Mute;}
+        auto GetAudioIn() const {return Mixer_Audio_In;}
 
         // Info Set Interface
         void SetChannelVolume(float I_ChannelVolume);
@@ -49,6 +51,10 @@ class Mixer {
         void Mixer_MuteAction(unsigned int I_ChannelID);
         void Mixer_SoloAction(unsigned int I_ChannelID);
         void Mixer_Printer();
+
+        // Block FX Chain Interface
+        // 获取到指定通道的音频输入, 以便BlockFX发送使用
+        double* GetMixerChannelAudioIn(unsigned int I_ChannelID);
 };
 
 
